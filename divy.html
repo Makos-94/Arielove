@@ -1,0 +1,135 @@
+<html lang="pl">
+
+<head>
+<meta charset="utf-8 />
+<title>ArieLove Handmade</title>
+<meta name="description" content="Sklep z ubraniami dla dzieci" />
+<meta name="keywords" content="ubrania, dzieci, butik, sklep, styl, moda dziecieca />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+<script type="text/javascript">
+    
+    function odliczanie()
+    {
+      var czas = new Date();
+    
+    var dzien = czas.getDate();
+    var miesiac = czas.getMonth()+1;    
+    var rok = czas.getFullYear();
+    
+    var godzina = czas.getHours();
+        if (godzina<10) godzina = "0"+godzina
+    var minuta = czas.getMinutes();
+        if (minuta<10) minuta = "0"+minuta
+    var sekunda = czas.getSeconds();
+        if (sekunda<10) sekunda = "0"+sekunda
+        
+         documnet.getElementById("zegar").innetHTML = dzien+"/"+miesiac+"/"+rok+" | " +godzina+":"+minuta+":"+sekunda;
+        
+        setTimeout("odliczanie()",1000);
+          }
+       </script>
+    
+    <script type="text/javascript">
+        documnet.getElementById("zegar").innerHTML = dzien+"/"+miesiac+"/"+rok+" | " +godzina+":"+minuta+":"+sekunda;
+        
+        
+    </script>
+    
+    <body onload="odliczanie();">
+    
+    <style>
+        
+        
+        #container
+        {width: 1000px;
+        margin-left: auto;
+        margin-right: auto;}
+        
+        #logo
+        {background-color: pink;
+        text-colour: red;
+            text-align: center;
+        padding: 30px
+ 
+        }
+        
+        #nav
+        {
+            float: left;
+            background-color: cornsilk;
+            width: 130px;
+            min-height: 620px;
+            padding: 10px;
+        }
+        #content
+        {
+            float: left;
+            padding: 20px;
+            width: 600px;
+            
+        }
+        #ad
+        {
+            float: left;
+            width: 160px;
+            height: auto
+            min-height: 620px;
+            padding: 10px;
+            background-color: aquamarine;
+            
+        }
+        #footer
+        {
+            clear: both;
+            background-color: darkgray;
+            text-align: center;
+            padding: 20px;
+        }
+        
+    </style>
+        
+</head>
+
+
+    
+    
+    <body>
+    
+    
+<div id="container">
+    
+    <div id="logo">
+        <h1>ArieLove Handmade</h1>
+     </div>
+    
+    <div id="nav">
+    Dziewczynka <br/> <br/> <br/>
+        Chłopiec <br/> <br/> <br/>
+        Promocje <br/> <br/> <br/>
+        Kontakt <br/> <br/> <br/>
+    </div>
+    
+    <div id="content">
+    <img src="img/arielove.jpg" />
+    </div>
+    
+    <div id="ad">
+
+    </div>
+    
+    <div id="footer">
+    ArieLove Handmade! &copy; Wszelkie prawa zastrzeżone.
+    </div>
+    
+    
+    
+    <script type="text/javascript">
+        documnet.getElementById("zegar").innetHTML = dzien+"/"+miesiac+"/"+rok+" | " +godzina+":"+minuta+":"+sekunda;
+    </script>
+    
+</body>
+
+
+
+</html>
